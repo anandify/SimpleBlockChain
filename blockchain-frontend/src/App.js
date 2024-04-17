@@ -18,7 +18,7 @@ function App() {
   const [ws, setWs] = useState(null);
 
   useEffect(() => {
-    const newWs = new WebSocket('ws://localhost:8080');
+    const newWs = new WebSocket('https://simple-block-chain-backend.vercel.app/');
     setWs(newWs);
   }, []);
 
